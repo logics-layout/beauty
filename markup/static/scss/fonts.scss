@@ -1,0 +1,95 @@
+/* Your custom fonts here */
+@import "libraries/bourbon/bourbon";
+
+// Example
+//https://edgewebfonts.adobe.com/help#using-fonts-in-css
+// 100 -> Thin, Hairline
+// 200 -> Extra Light
+// 300 -> Light
+// 400 -> Normal, Book
+// 500 -> Medium
+// 600 -> Semibold, Demibold
+// 700 -> Bold
+// 800 -> Heavy, Extra Bold
+// 900 -> Black
+
+@include font-face("Montserrat", "../fonts/Montserrat-Thin", $file-formats: woff eot ttf){
+  font-style: normal;
+  font-weight: 100;
+};
+@include font-face("Montserrat", "../fonts/Montserrat-ThinItalic", $file-formats: woff eot ttf){
+  font-style: italic;
+  font-weight: 100;
+};
+
+@include font-face("Montserrat", "../fonts/Montserrat-ExtraLight", $file-formats: woff eot ttf){
+  font-style: normal;
+  font-weight: 200;
+};
+@include font-face("Montserrat", "../fonts/Montserrat-ExtraLightItalic", $file-formats: woff eot ttf){
+  font-style: italic;
+  font-weight: 200;
+};
+
+@include font-face("Montserrat", "../fonts/Montserrat-Light", $file-formats: woff eot ttf){
+  font-style: normal;
+  font-weight: 300;
+};
+@include font-face("Montserrat", "../fonts/Montserrat-LightItalic", $file-formats: woff eot ttf){
+  font-style: italic;
+  font-weight: 300;
+};
+
+@include font-face("Montserrat", "../fonts/Montserrat-Regular", $file-formats: woff eot ttf){
+  font-style: normal;
+  font-weight: 400;
+};
+@include font-face("Montserrat", "../fonts/Montserrat-Italic", $file-formats: woff eot ttf){
+  font-style: italic;
+  font-weight: 400;
+};
+
+@include font-face("Montserrat", "../fonts/Montserrat-Medium", $file-formats: woff eot ttf){
+  font-style: normal;
+  font-weight: 500;
+};
+@include font-face("Montserrat", "../fonts/Montserrat-Medium", $file-formats: woff eot ttf){
+  font-style: italic;
+  font-weight: 500;
+};
+
+@include font-face("Montserrat", "../fonts/Montserrat-SemiBold", $file-formats: woff eot ttf){
+  font-style: normal;
+  font-weight: 600;
+};
+@include font-face("Montserrat", "../fonts/Montserrat-SemiBoldItalic", $file-formats: woff eot ttf){
+  font-style: italic;
+  font-weight: 600;
+};
+
+@include font-face("Montserrat", "../fonts/Montserrat-Bold", $file-formats: woff eot ttf){
+  font-style: normal;
+  font-weight: 700;
+};
+@include font-face("Montserrat", "../fonts/Montserrat-BoldItalic", $file-formats: woff eot ttf){
+  font-style: italic;
+  font-weight: 700;
+};
+
+@include font-face("Montserrat", "../fonts/Montserrat-ExtraBold", $file-formats: woff eot ttf){
+  font-style: normal;
+  font-weight: 800;
+};
+@include font-face("Montserrat", "../fonts/Montserrat-ExtraBoldItalic", $file-formats: woff eot ttf){
+  font-style: italic;
+  font-weight: 800;
+};
+
+@include font-face("Montserrat", "../fonts/Montserrat-Black", $file-formats: woff eot ttf){
+  font-style: normal;
+  font-weight: 900;
+};
+@include font-face("Montserrat", "../fonts/Montserrat-BlackItalic", $file-formats: woff eot ttf){
+  font-style: italic;
+  font-weight: 900;
+};

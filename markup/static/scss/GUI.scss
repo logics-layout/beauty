@@ -1,0 +1,80 @@
+// GUI stylies of the project
+// For example, styles of the links, buttons and so on.
+
+@import "libraries/bootstrap/buttons";
+@import "libraries/bootstrap/type";
+@import "libraries/bootstrap/tables";
+@import "libraries/bootstrap/forms";
+//@import "libraries/bootstrap/breadcrumbs";
+//@import "libraries/bootstrap/nav";
+@import "libraries/bootstrap/dropdown";
+
+a{
+  //color: #e74700;
+  //text-decoration: underline;
+  color: #86adcc;
+  cursor: pointer;
+  text-decoration: none;
+  &:focus {
+    text-decoration: none;
+  }
+  &:hover{
+    text-decoration: none;
+  }
+  &:not(.not-styleLink){
+    @include link-border-color(#86adcc);
+  }
+  .not-styleLink{
+    text-decoration: underline;
+  }
+}
+
+.fwb{
+  font-weight: bold;
+}
+.fwL{
+  font-weight: lighter;
+}
+
+.title-min{
+  font-size: 18px;
+  line-height: 1.4em;
+  margin-bottom: 3px;
+}
+
+.text-opacity{
+  opacity: .48;
+}
+
+.block-title-min{
+  margin-bottom: 18px;
+}
+
+.text-op{
+
+}
+
+.not-styleLink{
+  a{
+    border-bottom: none;
+  }
+}
+
+.caret{
+  @include triangle('down', currentColor, 6px, 4px);
+}
+.dib{
+  display: inline-block;
+  vertical-align: middle;
+}
+.db{
+  display: block;
+}
+.ttu{
+  text-transform: uppercase;
+}
+
+
+
+@include text-border-bottom('black', #43464d);
+@include text-border-bottom('white', #fff);

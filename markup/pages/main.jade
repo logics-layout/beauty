@@ -1,0 +1,45 @@
+doctype html
+html(class="no-js", lang="ru")
+
+    include _mixin
+    include ../components/head/head
+    include ../components/header/header
+    include ../components/footer/footer
+
+    head
+        //- start  block head
+        block head
+        - if(headData)
+            +head(headData)
+        - else
+            +head(head.defaults)
+        //- end  block head
+    body.page
+        |%=symbols=%
+
+        +header(index)
+        .page__wrapper
+            //- Include your components here
+            // start block content
+            section.page__wrapper-page
+                block content
+            // end block content
+
+            .page__buffer
+        .page__footer
+            +footer()
+
+        script(src='%=static=%js/separate-js/svg4everybody.min.js')
+        script svg4everybody();
+
+        script(src="%=static=%js/main.js" type="text/javascript")
+        //- start block script
+        block script
+        //- end block script
+        //- Main scripts. You can replace it, but I recommend you to leave it here
+        script(src='%=static=%js/main%=hash=%%=min=%.js')
+
+
+
+
+
